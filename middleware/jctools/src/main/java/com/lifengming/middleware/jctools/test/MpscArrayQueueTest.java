@@ -7,7 +7,7 @@ import org.jctools.queues.MpscArrayQueue;
  */
 public class MpscArrayQueueTest {
 
-    public static final MpscArrayQueue<String> MPSC_ARRAY_QUEUE = new MpscArrayQueue<>(2);
+    public static final MpscArrayQueue<Object> MPSC_ARRAY_QUEUE = new MpscArrayQueue<>(16);
 
     public static void main(String[] args) {
 
@@ -15,14 +15,14 @@ public class MpscArrayQueueTest {
 
             int index = i;
 
-            new Thread(() -> MPSC_ARRAY_QUEUE.offer("data" + index), "thread" + index).start();
+            new Thread(() -> MPSC_ARRAY_QUEUE.offer("dataddddddddddddddddddddddddddddddddddd" + index), "thread" + index).start();
 
         }
 
         try {
             Thread.sleep(1000L);
             // 入队操作，队列满则抛出异常
-            MPSC_ARRAY_QUEUE.add("data3");
+            MPSC_ARRAY_QUEUE.add("dataddddddddddddddddddddddddddddddddddd");
 
         } catch (Exception e) {
 
