@@ -42,6 +42,13 @@ public abstract class CookieHelper implements CookieHandler {
 
     @Override
     public void removeCookie(CookieContext cookieContext) {
+        Cookie cookie = new Cookie(cookieContext.getName(), null);
 
+        if (cookieContext.getPath() != null) {
+            cookie.setPath(cookieContext.getPath());
+        }
+        cookie.setDomain(cookieContext.getDomain());
+        cookie.setMaxAge(0);
+        cookieContext.getResponse().addCookie(cookie);
     }
 }
