@@ -15,6 +15,7 @@
         <module>disruptor</module>
         <module>jctools</module>
         <module>netty</module>
+        <module>sso</module>
     </modules>
 
     <properties>

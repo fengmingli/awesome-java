@@ -40,7 +40,7 @@ public class HashedWheelTimerTest {
 
         }, 1, TimeUnit.SECONDS);
 
-        timer.newTimeout(timeout -> System.out.println("timeout3: " + new Date()), 3, TimeUnit.SECONDS);
+        timer.newTimeout(timeout -> System.out.println("timeout3: " + new Date()), 9, TimeUnit.SECONDS);
 
     }
 }
