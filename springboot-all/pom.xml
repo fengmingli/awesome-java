@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.lifengming</groupId>
+        <artifactId>common</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lifengming.springboot</groupId>
+    <artifactId>springboot-all</artifactId>
+    <version>1.0.0.RELEASE</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <springboot.version>2.1.3.RELEASE</springboot.version>
+        <lombok.verison>1.18.10</lombok.verison>
+        <commons-lang3.verison>3.9</commons-lang3.verison>
+        <fastjson.version>1.2.68</fastjson.version>
+        <guava.version>30.0-jre</guava.version>
+    </properties>
+
+    <modules>
+        <module>springboot-common</module>
+        <module>springboot-mybatis</module>
+        <module>springboot-aop</module>
+        <module>springboot-redis</module>
+        <module>server-springboot-starter</module>
+        <module>springboot-multi-datasource</module>
+        <module>springboot-docker</module>
+        <module>springboot-swagger2</module>
+        <module>springboot-mail</module>
+        <module>springboot-disruptor</module>
+        <module>springboot-apollo</module>
+        <module>springboot-xxl-job</module>
+        <module>springboot-expand</module>
+        <module>springboot-exception</module>
+        <module>springboot-ldap</module>
+        <module>springboot-nacos</module>
+        <module>springboot-webfluxclient</module>
+        <module>springboot-logging</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${springboot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/junit/junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>5.0.3</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.verison}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.25</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>1.7.25</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--https://mvnrepository.com/artifact/org.slf4j/slf4j-nop-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-nop</artifactId>
+                <version>1.7.25</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.verison}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-tomcat</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-autoconfigure -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-autoconfigure</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

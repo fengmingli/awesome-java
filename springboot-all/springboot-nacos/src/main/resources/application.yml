@@ -1,0 +1,12 @@
+nacos:
+  config:
+    server-addr:
+    namespace:
+    group:
+    data-id:
+    username:
+    password:
+    type: yaml
+spring:
+  application:
+    name: test
