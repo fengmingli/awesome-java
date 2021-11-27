@@ -1,0 +1,41 @@
+server:
+  port: 8088
+#mybatis mapping文件位置配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+######datasource######
+###spring boot自动配置单数据源###
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT
+    username: root
+    password: 123456
+###手动配置多数据源###
+#master
+multiple:
+  datasource:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT
+      username: root
+      password: 123456
+#slave1
+    slave1:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/slave1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT
+      username: root
+      password: 123456
+#slave2
+    slave2:
+      driver-class-name:  com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/slave2?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT
+      username: root
+      password: 123456
+#other
+    other:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/other?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT
+      username: root
+      password: 123456

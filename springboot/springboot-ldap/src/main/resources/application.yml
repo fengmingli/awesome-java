@@ -1,0 +1,6 @@
+spring:
+  ldap:
+    urls:
+    base:
+    username:
+    password:
