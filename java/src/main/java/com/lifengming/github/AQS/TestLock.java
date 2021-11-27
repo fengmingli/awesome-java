@@ -1,5 +1,8 @@
 package com.lifengming.github.AQS;
 
+import java.time.LocalDateTime;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @author lifengming
  * @date 2021.10.28
@@ -30,6 +33,18 @@ public class TestLock {
         thread1.join();
         thread2.join();
         System.out.println(count);
+    }
+    public void lock(){
+        ReentrantLock lock = new ReentrantLock(true);
+        try {
+            lock.lock();
+        }catch (Exception e){
+
+        }finally {
+            lock.unlock();
+        }
+
+
     }
 
 }

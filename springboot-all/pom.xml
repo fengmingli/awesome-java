@@ -40,6 +40,7 @@
         <module>springboot-nacos</module>
         <module>springboot-webfluxclient</module>
         <module>springboot-logging</module>
+        <module>springboot-mysql</module>
     </modules>
 
     <dependencyManagement>
