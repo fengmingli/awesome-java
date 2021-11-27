@@ -9,8 +9,9 @@
 
     <modules>
         <module>middleware</module>
-        <module>tools</module>
         <module>java</module>
+        <module>springboot</module>
+        <module>springcloud</module>
     </modules>
 
     <properties>
