@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-consumer</artifactId>
+    <artifactId>springboot-dubbo-consumer</artifactId>
     <properties>
         <java.version>1.8</java.version>
         <!-- 三方库包 -->
