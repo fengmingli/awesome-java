@@ -1,0 +1,6 @@
+spring:
+  ldap:
+    urls:
+    base: OU=XXX,OU=XXX,DC=XXX,DC=com
+    username:
+    password:

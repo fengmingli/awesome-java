@@ -6,14 +6,17 @@
     <artifactId>common</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+
     <modules>
         <module>middleware</module>
         <module>java</module>
+        <module>springboot</module>
+        <module>springcloud</module>
     </modules>
 
     <properties>
         <slf4j.version>1.7.25</slf4j.version>
-        <lombok.veriosn>1.18.4</lombok.veriosn>
+        <lombok.veriosn>1.18.20</lombok.veriosn>
         <log4j2.version>2.14.0</log4j2.version>
         <junit.version>3.8.1</junit.version>
         <maven.compiler.source>8</maven.compiler.source>

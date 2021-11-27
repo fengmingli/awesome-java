@@ -1,0 +1,10 @@
+server:
+  port: 8000
+dubbo:
+  #应用名字
+  application:
+    name: consumer-server
+  #注册中心地址
+  registry:
+    address: zookeeper://47.96.188.139:8001
+

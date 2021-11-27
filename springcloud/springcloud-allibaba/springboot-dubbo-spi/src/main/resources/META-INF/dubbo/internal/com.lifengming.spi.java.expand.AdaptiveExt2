@@ -1,0 +1,3 @@
+dubbo=com.lifengming.spi.java.expand.DubboAdaptiveExt2
+cloud=com.lifengming.spi.java.expand.SpringCloudAdaptiveExt2
+thrift=com.lifengming.spi.java.expand.ThriftAdaptiveExt2
